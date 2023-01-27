@@ -2,8 +2,13 @@ import * as SiIcons from "react-icons/si";
 import * as BsIcons from "react-icons/bs";
 import * as TfiIcons from "react-icons/tfi";
 import "./Contact.css";
+import { useContext, useEffect } from "react";
+import Context from "../../context/Context";
 
 const Contact = () => {
+  const { product } = useContext(Context);
+
+  useEffect(() => {}, [product])
   return (
     <div className="container-footer">
       <div className="container-contact">
@@ -13,9 +18,7 @@ const Contact = () => {
               <SiIcons.SiHomeassistantcommunitystore />
               <div>
                 <h4>Avenida Minas gerais, 500 - Piraquara - PR</h4>
-                <h5>
-                  Dom - Dom / 24hrs 
-                </h5>
+                <h5>Dom - Dom / 24hrs</h5>
               </div>
             </div>
             <div className="contact-info">
@@ -74,6 +77,11 @@ const Contact = () => {
                 required
                 className="textarea"
                 placeholder="Digite a sua mensagem"
+                value={
+                  product.title
+                    ? `Olá, gostaria de fazer um orçamento com o seguinte produto ${product.title}.`
+                    : ''
+                }
               />
               <input
                 type="hidden"
@@ -85,14 +93,16 @@ const Contact = () => {
                 name="redirectTo"
                 value="https://acqualine.vercel.app/"
               ></input>
-              <button>Enviar</button>
+              <button onClick={ localStorage.clear() }>Enviar</button>
             </form>
           </div>
         </div>
       </div>
 
       <div className="developer">
-        <span>Developed by Lucas Agostinho</span>
+        <a href="https://my-portfolio-git-main-lucasbelgamann.vercel.app/" target="_blank" rel="noreferrer">
+          <span>Developed by Lucas Agostinho</span>
+        </a>
       </div>
     </div>
   );

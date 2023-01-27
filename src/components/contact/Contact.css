@@ -129,7 +129,7 @@ div.sigle-input .input:valid ~ label {
   background-color: rgb(255, 72, 0);
 }
 
-.developer span {
+.developer a {
   color: rgb(137, 136, 136);
   margin: auto;
 }
