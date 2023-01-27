@@ -6,7 +6,7 @@ const AboutUs = () => {
       <div className="description-about">
         <h2 id="about-us">Sobre nós</h2>
         <p>
-          A <strong>Heater</strong> Aquecedores é uma empresa curitibana que há dez anos presta
+          A <strong>Acqualine</strong> é uma empresa que há dez anos presta
           serviços de qualidade a seus clientes. Fornecemos assistência técnica
           especializada atuando na instalação, oconserto e venda de aquecedores
           e fogões. Ao longo de nossa existência, nos consolidamos como uma
