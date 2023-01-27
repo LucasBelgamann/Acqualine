@@ -8,8 +8,8 @@ const AboutUs = () => {
         <p>
           A <strong>Acqualine</strong> é uma empresa que há dez anos presta
           serviços de qualidade a seus clientes. Fornecemos assistência técnica
-          especializada atuando na instalação, oconserto e venda de aquecedores
-          e fogões. Ao longo de nossa existência, nos consolidamos como uma
+          especializada atuando na instalação, conserto e venda de aquecedores
+          e pressurizadores. Ao longo de nossa existência, nos consolidamos como uma
           empresa que sempre zela pela satisfação de nosso cliente!
         </p>
       </div>
