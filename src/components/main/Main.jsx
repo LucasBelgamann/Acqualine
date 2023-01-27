@@ -5,10 +5,9 @@ const Main = () => {
   return (
     <div className="container-main">
       <div className="description-main">
-        <h1>Olá</h1>
-        <p>
-        Cansado de ter problemas com seu aquecedor e com falta de mão de obra especializada no mercado? Nós estamos a 10 anos no mercado, trazendo a qualidade das melhores marcas nacionais em nossos produtos. E fornecendo alguns dos melhores serviços da área de aquecedores.
-        </p>
+        <h1>
+         "Olá nós somos a Acqualine, e temos o próposito de trazer um dos melhores serviços na área de aquecedores do Brasil."
+        </h1>
         <a href="#products">
           <IoIcons.IoIosArrowDown />
         </a>

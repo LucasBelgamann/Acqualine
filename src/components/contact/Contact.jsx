@@ -83,7 +83,7 @@ const Contact = () => {
               <input
                 type="hidden"
                 name="redirectTo"
-                value="https://example.com/contact/success"
+                value="https://acqualine.vercel.app/"
               ></input>
               <button>Enviar</button>
             </form>
