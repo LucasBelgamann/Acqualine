@@ -12,15 +12,15 @@ const Contact = () => {
             <div className="contact-info">
               <SiIcons.SiHomeassistantcommunitystore />
               <div>
-                <h4>Rua rio purus, 1390 - Pinhais - PR</h4>
+                <h4>Avenida Minas gerais, 500 - Piraquara - PR</h4>
                 <h5>
-                  Seg - Sex / 9:00hs - 17:30hs e Sábados /9:00hs - 12:00hs
+                  Dom - Dom / 24hrs 
                 </h5>
               </div>
             </div>
             <div className="contact-info">
               <a
-                href="https://web.whatsapp.com/send?phone=41991770049"
+                href="https://web.whatsapp.com/send?phone=41996013459"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -33,7 +33,7 @@ const Contact = () => {
                   rel="noreferrer"
                 >
                   <h4>WhatsApp</h4>
-                  <h5>(41) 98817-6523</h5>
+                  <h5>(41) 99601-3459</h5>
                 </a>
               </div>
             </div>
