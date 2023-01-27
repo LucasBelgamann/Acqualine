@@ -5,7 +5,6 @@ import lorenzetti from "./img/lorenzetti.png";
 import orbis from "./img/orbis.png";
 import Rheem from "./img/Rheem.png";
 import Rinnai from "./img/Rinnai.png";
-import sakura from "./img/sakura.png";
 import "./Brands.css";
 
 const Brands = () => {
@@ -23,8 +22,7 @@ const Brands = () => {
           <img src={lorenzetti} width="100" alt="logo" />   
           <img src={orbis} width="100" alt="logo" /> 
           <img src={Rheem} width="100" alt="logo" />
-          <img src={Rinnai} width="100" alt="logo" />
-          <img src={sakura} width="100" alt="logo" />    
+          <img src={Rinnai} width="100" alt="logo" /> 
       </div>
     </div>
   );
