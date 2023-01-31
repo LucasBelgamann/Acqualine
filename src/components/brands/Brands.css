@@ -29,6 +29,7 @@
 }
 
 .brands img {
+    background-color: black;
     width: 15%;
     margin: 20px;
     aspect-ratio: 3/2;
