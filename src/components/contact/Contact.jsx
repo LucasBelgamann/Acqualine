@@ -2,31 +2,14 @@ import * as SiIcons from "react-icons/si";
 import * as BsIcons from "react-icons/bs";
 import * as TfiIcons from "react-icons/tfi";
 import "./Contact.css";
-import { useContext, useEffect, useState } from "react";
-import Context from "../../context/Context";
+import { useState } from "react";
 
 const Contact = () => {
-  const { product } = useContext(Context);
-  const [orcamento, setOrcamento] = useState({
-    nome: '',
-    telefone: '',
-    menssagem: '',
-  })
+  const [nome, setNome] = useState("");
 
-  const handleChange = ({ target: { name, value } }) => {
-    setOrcamento((oldState) => ({ ...oldState, [name]: value }));
+  const handleChange = ({ target: { value } }) => {
+    setNome(value);
   };
-
-
-  const handleClik = () => {
-    // um número no formato internacional (ativo no WhatsApp)
-    let number = '5541988309378'
-    `https://api.whatsapp.com/send?phone=${encodeURIComponent('5541988309378')}&text=${encodeURIComponent(orcamento.menssagem)}`  
-}
-
-  useEffect(() => {
-    console.log(orcamento)
-  }, [orcamento, product])
 
   return (
     <div className="container-footer">
@@ -50,7 +33,7 @@ const Contact = () => {
               </a>
               <div>
                 <a
-                  href="https://web.whatsapp.com/send?phone=41991770049"
+                  href="https://web.whatsapp.com/send?phone=41996013459"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -69,50 +52,39 @@ const Contact = () => {
           </div>
           <div className="contact-line"></div>
           <div className="contact-form" id="contact">
-            <h3 id="contact">Faça seu orçamento</h3>
+            <div>
+            <h3 id="contact">Entre em contato conosco!</h3>
+            </div>
             <form>
               <div className="sigle-input">
                 <input
                   type="text"
                   name="nome"
                   required
-                  onChange={ handleChange }
+                  onChange={handleChange}
                   className="input"
                   id="nome"
                 />
                 <label htmlFor="nome">Nome</label>
               </div>
-              <div className="sigle-input">
-                <input
-                  type="text"
-                  name="telefone"
-                  required
-                  onChange={ handleChange }
-                  className="input"
-                  id="email"
-                />
-                <label htmlFor="email">Telefone</label>
-              </div>
-              <textarea
-                name="menssagem"
-                required
-                className="textarea"
-                onChange={ handleChange }
-                placeholder="Digite a sua mensagem"
-                value={
-                  product.title
-                    ? `Olá, gostaria de fazer um orçamento com o seguinte produto ${product.title}.`
-                    : ''
-                }
-              />
-              <a href={ `whatsapp://send?text=${encodeURIComponent(orcamento.menssagem)}` } target="_blank" rel="noreferrer" >Enviar</a>
+              <a
+                href={`https://wa.me/5541996013459?text=Olá eu me chamo ${nome}, e gostaria de saber mais sobre os seus produtos e serviços!`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Enviar
+              </a>
             </form>
           </div>
         </div>
       </div>
 
       <div className="developer">
-        <a href="https://my-portfolio-git-main-lucasbelgamann.vercel.app/" target="_blank" rel="noreferrer">
+        <a
+          href="https://my-portfolio-git-main-lucasbelgamann.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <span>Developed by Lucas Agostinho</span>
         </a>
       </div>

@@ -117,15 +117,10 @@ div.sigle-input .input:valid ~ label {
   border-bottom: 4px solid rgb(255, 72, 0);
 }
 
-.contact-form button {
-  border: none;
-  color: white;
-  font-weight: bolder;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 10vw;
-  height: 5vh;
-  margin-top: 10px;
+.contact-form a {
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
   background-color: rgb(255, 72, 0);
 }
 
@@ -186,11 +181,6 @@ div.sigle-input .input:valid ~ label {
   .textarea {
     width: 70vw;
   }
-
-  .contact-form button {
-    width: 25vw;
-    height: 6vh;
-  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
@@ -219,11 +209,6 @@ div.sigle-input .input:valid ~ label {
 
   .textarea {
     width: 70vw;
-  }
-
-  .contact-form button {
-    width: 25vw;
-    height: 6vh;
   }
 
   .contact-form h3 {
