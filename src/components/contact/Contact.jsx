@@ -2,13 +2,32 @@ import * as SiIcons from "react-icons/si";
 import * as BsIcons from "react-icons/bs";
 import * as TfiIcons from "react-icons/tfi";
 import "./Contact.css";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import Context from "../../context/Context";
 
 const Contact = () => {
   const { product } = useContext(Context);
+  const [orcamento, setOrcamento] = useState({
+    nome: '',
+    telefone: '',
+    menssagem: '',
+  })
 
-  useEffect(() => {}, [product])
+  const handleChange = ({ target: { name, value } }) => {
+    setOrcamento((oldState) => ({ ...oldState, [name]: value }));
+  };
+
+
+  const handleClik = () => {
+    // um número no formato internacional (ativo no WhatsApp)
+    let number = '5541988309378'
+    `https://api.whatsapp.com/send?phone=${encodeURIComponent('5541988309378')}&text=${encodeURIComponent(orcamento.menssagem)}`  
+}
+
+  useEffect(() => {
+    console.log(orcamento)
+  }, [orcamento, product])
+
   return (
     <div className="container-footer">
       <div className="container-contact">
@@ -51,12 +70,13 @@ const Contact = () => {
           <div className="contact-line"></div>
           <div className="contact-form" id="contact">
             <h3 id="contact">Faça seu orçamento</h3>
-            <form action="https://api.staticforms.xyz/submit" method="post">
+            <form>
               <div className="sigle-input">
                 <input
                   type="text"
-                  name="name"
+                  name="nome"
                   required
+                  onChange={ handleChange }
                   className="input"
                   id="nome"
                 />
@@ -65,17 +85,19 @@ const Contact = () => {
               <div className="sigle-input">
                 <input
                   type="text"
-                  name="email"
+                  name="telefone"
                   required
+                  onChange={ handleChange }
                   className="input"
                   id="email"
                 />
                 <label htmlFor="email">Telefone</label>
               </div>
               <textarea
-                name="message"
+                name="menssagem"
                 required
                 className="textarea"
+                onChange={ handleChange }
                 placeholder="Digite a sua mensagem"
                 value={
                   product.title
@@ -83,17 +105,7 @@ const Contact = () => {
                     : ''
                 }
               />
-              <input
-                type="hidden"
-                name="accessKey"
-                value="a90e6195-838c-47e5-90c0-80ba0cda36fd"
-              ></input>
-              <input
-                type="hidden"
-                name="redirectTo"
-                value="https://acqualine.vercel.app/"
-              ></input>
-              <button onClick={ localStorage.clear() }>Enviar</button>
+              <a href={ `whatsapp://send?text=${encodeURIComponent(orcamento.menssagem)}` } target="_blank" rel="noreferrer" >Enviar</a>
             </form>
           </div>
         </div>
