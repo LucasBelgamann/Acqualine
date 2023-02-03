@@ -67,17 +67,16 @@
     }
   }
 
-  @media screen and (min-width: 1024px ) and (max-width: 1300px) {
+  @media screen and (min-width: 1023px ) and (max-width: 1300px) {
     .container-about-us {
         height: 85vh;
     }
 
     .description-about {
-        color: black;
         width: 70%;
     }
     .description-about h2 {
-        width: 30%;
+        width: 35%;
         font-size: 40px;
     }
     .description-about p {
