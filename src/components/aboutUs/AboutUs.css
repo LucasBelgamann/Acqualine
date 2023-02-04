@@ -29,6 +29,7 @@
 }
 
 .description-about p strong {
+    font-family: "Orbitron", sans-serif;
     color: rgb(255, 72, 0);
 }
 

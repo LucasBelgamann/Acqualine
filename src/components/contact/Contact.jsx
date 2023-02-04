@@ -80,13 +80,7 @@ const Contact = () => {
       </div>
 
       <div className="developer">
-        <a
-          href="https://my-portfolio-git-main-lucasbelgamann.vercel.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
           <span>Developed by Lucas Agostinho</span>
-        </a>
       </div>
     </div>
   );

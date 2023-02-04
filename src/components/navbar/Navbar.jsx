@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="nav">
         <a href="#" className="icon">
-          Acqualine
+          ACQUALINE
       </a>
       <ul>
         <li>

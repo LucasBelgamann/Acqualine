@@ -8,7 +8,7 @@ const Main = () => {
         <h1>
          "Olá nós somos a Acqualine, e temos o próposito de trazer um dos melhores serviços na área de aquecedores do Brasil."
         </h1>
-        <a href="#products">
+        <a href="#about-us">
           <IoIcons.IoIosArrowDown />
         </a>
       </div>
