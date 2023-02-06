@@ -130,7 +130,7 @@
     }
 
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1023px ) and (max-width: 1300px) {
       .container-card {
         width: 90%;
       }
