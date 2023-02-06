@@ -80,7 +80,9 @@ const Contact = () => {
       </div>
 
       <div className="developer">
+        <a href="https://agostinho-portfolio.vercel.app/" target="_blank" rel="noreferrer">
           <span>Developed by Lucas Agostinho</span>
+        </a>
       </div>
     </div>
   );

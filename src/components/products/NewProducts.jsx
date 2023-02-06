@@ -4,7 +4,7 @@ import "./NewProducts.css";
 const NewProducts = () => {
   return (
     <div className="products-container">
-        <h3>Nossos produtos</h3>
+        <h3 id="products">Nossos produtos</h3>
         <h2>Mais vendidos</h2>
       <div className="container-card">
         {ProductsData.map((e) => (
