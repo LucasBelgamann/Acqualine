@@ -71,216 +71,62 @@
   border-radius: 5px;
 }
 
-@media screen and (max-width: 380px) {
-    .container-card {
-        width: 90%;
-      }
-      
-      .products-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-      
-      .card {
-        width: 40%;
-        margin: 10px;
-        height: 30vh;
-        background-color: rgb(213, 213, 213);
-      }
-      
-      .card img {
-        width: 65%;
-        margin: 20px;
-        aspect-ratio: 3/2;
-        object-fit: contain;
-      }
-      
-      .card h4 {
-        font-size: 8px;
-        width: 80%;
-      }
-      
-      .card h5 {
-        font-size: 9px;
-        width: 80%;
-      }
-      
-      .card button {
-        font-size: 6px;
-        width: 15vw;
-      }
+@media screen and (max-width: 767px) {
+  .container-card {
+    width: 90%;
+  }
+  
+  .card {
+    padding: 10px;
+    width: 45%;
+    margin: 5px;
+    height: 32vh;
+  }
+  
+  .card h4 {
+    font-size: 10px;
+  }
+  
+  .card h5 {
+    font-size: 12px;
+    margin: 10px;
+    width: 70%;
+  }
+  
+  .card button {
+    width: 20vw;
+    height: 3vh;
+    font-size: 8px;
+  }
   }
 
-  @media screen and (min-width: 380px) and (max-width: 460px) {
-    .container-card {
-        width: 90%;
-      }
-      
-      .products-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-      
-      .card {
-        width: 40%;
-        margin: 10px;
-        height: 25vh;
-        background-color: rgb(213, 213, 213);
-      }
-      
-      .card img {
-        width: 65%;
-        margin: 20px;
-        aspect-ratio: 3/2;
-        object-fit: contain;
-      }
-      
-      .card h4 {
-        font-size: 8px;
-        width: 80%;
-      }
-      
-      .card h5 {
-        font-size: 10px;
-        width: 80%;
-      }
-      
-      .card button {
-        font-size: 6px;
-        height: 2vh;
-        width: 15vw;
-      }
-  }
-
-  @media screen and (min-width: 460px) and (max-width: 760px) {
-    .container-card {
-        width: 90%;
-      }
-      
-      .products-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-      
-      .card {
-        width: 32%;
-        margin: 10px;
-        height: 30vh;
-        background-color: rgb(213, 213, 213);
-      }
-      
-      .card img {
-        width: 65%;
-        margin: 20px;
-        aspect-ratio: 3/2;
-        object-fit: contain;
-      }
-      
-      .card h4 {
-        font-size: 9px;
-        width: 80%;
-      }
-      
-      .card h5 {
-        font-size: 10px;
-        width: 80%;
-      }
-      
-      .card button {
-        font-size: 6px;
-        height: 2vh;
-        width: 15vw;
-      }
-  }
-
-  @media screen and (min-width: 760px) and (max-width: 860px) {
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
     .container-card {
       width: 90%;
     }
     
-    .products-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    
     .card {
-      width: 30%;
-      margin: 15px;
-      height: 30vh;
-      background-color: rgb(213, 213, 213);
-    }
-    
-    .card img {
-      width: 65%;
-      margin: 20px;
-      aspect-ratio: 3/2;
-      object-fit: contain;
+      padding: 10px;
+      width: 35%;
+      margin: 5px;
+      height: 32vh;
     }
     
     .card h4 {
-      font-size: 9px;
-      width: 80%;
+      font-size: 15px;
     }
     
     .card h5 {
-      font-size: 10px;
-      width: 60%;
+      font-size: 15px;
+      margin: 10px;
+      width: 70%;
     }
     
     .card button {
-      font-size: 6px;
-      height: 2vh;
-      width: 12vw;
+      width: 20vw;
+      height: 3vh;
+      font-size: 10px;
     }
-  }
+    }
 
-  @media screen and (min-width: 860px) and (max-width: 1023px) {
-    .container-card {
-      width: 90%;
-    }
-    
-    .products-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    
-    .card {
-      width: 30%;
-      margin: 15px;
-      height: 40vh;
-      background-color: rgb(213, 213, 213);
-    }
-    
-    .card img {
-      width: 65%;
-      margin: 20px;
-      aspect-ratio: 3/2;
-      object-fit: contain;
-    }
-    
-    .card h4 {
-      font-size: 9px;
-      width: 80%;
-    }
-    
-    .card h5 {
-      font-size: 10px;
-      width: 60%;
-    }
-    
-    .card button {
-      font-size: 6px;
-      height: 2vh;
-      width: 12vw;
-    }
-  }
+  
