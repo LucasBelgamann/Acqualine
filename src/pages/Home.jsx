@@ -4,7 +4,7 @@ import Contact from "../components/contact/Contact";
 import Main from "../components/main/Main";
 import Navbar from "../components/navbar/Navbar";
 import NavbarMobile from "../components/navbar/NavbarMobile";
-import Products from "../components/products/Products";
+import NewProducts from "../components/products/NewProducts";
 import Services from "../components/services/Services";
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
       <Navbar />
       <Main />
       <AboutUs />
-      <Products />
+      <NewProducts />
       <Services />
       <Brands />
       <Contact />
